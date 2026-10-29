@@ -1,0 +1,7 @@
+MioNote 1.0.0は、Windows 11のARM64／x64向けにRustで実装したWin32手書きノートです。Win32ウィンドウとWindows Inkのデスクトップホスト（IInkDesktopHost／IInkPresenterDesktop）を使って、ペン・マウス入力と筆跡の描画を行います。
+
+パッケージはpackagedClassicApp・mediumILとしてMioNote.exeを実行します。このデスクトップ実行モデルに必要なため、runFullTrustを宣言しています。管理者権限への昇格は要求しません。
+
+利用者の操作に応じてノートを保存・読み込みし、PDF・PNG・SVG・ZIPを書き出します。設定と、利用者が明示的に有効にした診断ログは、アプリ専用のLocalStateに保存します。
+
+アプリ本体に通信、広告、アクセス解析、クラウド同期の実装はありません。サービス・ドライバーのインストール、自動起動の登録は行いません。ログインや外部サーバーへの接続も不要です。宣言している制限付き機能はrunFullTrustだけです。

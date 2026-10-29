@@ -1,0 +1,6 @@
+[target.aarch64-pc-windows-msvc]
+# Keep the portable EXE independent of the VC++ Redistributable installation.
+rustflags = ["-C", "target-feature=+crt-static", "-C", "control-flow-guard=yes", "-C", "link-arg=/DEPENDENTLOADFLAG:0x800"]
+
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static", "-C", "control-flow-guard=yes", "-C", "link-arg=/DEPENDENTLOADFLAG:0x800"]

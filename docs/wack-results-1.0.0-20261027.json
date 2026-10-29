@@ -1,0 +1,419 @@
+{
+  "date": "2026-10-27",
+  "app_version": "1.0.0",
+  "package_version": "1.0.0.0",
+  "tool_version": "10.0.28000.2957",
+  "tool_architecture": "x86",
+  "host_architecture": "arm64",
+  "host_os_version": "10.0.26300.0",
+  "application_type": "Centennial",
+  "mode": "file-only package validation without deployment",
+  "original_artifacts_unchanged": true,
+  "reports": [
+    {
+      "variant": "bundle",
+      "artifact": "MioNote-1.0.0-store.msixbundle",
+      "artifact_sha256": "f96930a12c4b86059fdda6155d790fcf4b419d58b5b7933cb3490905cde60c2c",
+      "report_xml": "bundle-report.xml",
+      "report_sha256": "40b3b636c646372c7eb208ca57554efbbc41b88e99dabae197fbdf0836f4e386",
+      "overall_result": "PASS",
+      "partial_run": false,
+      "selected_payload_architectures": [
+        "x64"
+      ],
+      "message_count": 0,
+      "tests": [
+        {
+          "id": 2,
+          "name": "署名されたドライバーおよび実行可能ファイルのインストール",
+          "result": "PASS"
+        },
+        {
+          "id": 11,
+          "name": "ユーザー アカウント制御の実行レベル",
+          "result": "PASS"
+        },
+        {
+          "id": 77,
+          "name": "アプリケーション数",
+          "result": "PASS"
+        },
+        {
+          "id": 31,
+          "name": "アプリ マニフェスト",
+          "result": "PASS"
+        },
+        {
+          "id": 87,
+          "name": "ファイル関連付けの動詞",
+          "result": "PASS"
+        },
+        {
+          "id": 86,
+          "name": "レジストリ チェック",
+          "result": "PASS"
+        },
+        {
+          "id": 91,
+          "name": "エンタープライズ機能",
+          "result": "PASS"
+        },
+        {
+          "id": 90,
+          "name": "リソース パッケージ",
+          "result": "PASS"
+        },
+        {
+          "id": 70,
+          "name": "禁止されたファイルのアナライザー",
+          "result": "PASS"
+        },
+        {
+          "id": 62,
+          "name": "プライベート コード署名",
+          "result": "PASS"
+        },
+        {
+          "id": 45,
+          "name": "アプリ リソース",
+          "result": "PASS"
+        },
+        {
+          "id": 61,
+          "name": "ブランド化",
+          "result": "PASS"
+        },
+        {
+          "id": 46,
+          "name": "デバッグの構成",
+          "result": "PASS"
+        },
+        {
+          "id": 52,
+          "name": "特殊用途の機能",
+          "result": "PASS"
+        },
+        {
+          "id": 56,
+          "name": "ExclusiveTo 属性",
+          "result": "PASS"
+        },
+        {
+          "id": 57,
+          "name": "型のロケーション",
+          "result": "PASS"
+        },
+        {
+          "id": 55,
+          "name": "型名の大文字小文字の区別",
+          "result": "PASS"
+        },
+        {
+          "id": 54,
+          "name": "型名の正確性",
+          "result": "PASS"
+        },
+        {
+          "id": 58,
+          "name": "一般的なメタデータ正確性",
+          "result": "PASS"
+        },
+        {
+          "id": 53,
+          "name": "プロパティ",
+          "result": "PASS"
+        },
+        {
+          "id": 89,
+          "name": "アーカイブ ファイルの使用量",
+          "result": "PASS"
+        },
+        {
+          "id": 88,
+          "name": "ブロック済みの実行可能ファイル",
+          "result": "PASS"
+        },
+        {
+          "id": 63,
+          "name": "プラットフォームに適したファイル",
+          "result": "PASS"
+        },
+        {
+          "id": 92,
+          "name": "DPIAwarenessValidation",
+          "result": "PASS"
+        }
+      ]
+    },
+    {
+      "variant": "arm64",
+      "artifact": "MioNote-1.0.0-store-arm64.msix",
+      "artifact_sha256": "73e729c85cbedac8c529a7b51ab064743367f06ed4a11457f164e360cf5a2209",
+      "report_xml": "arm64-report.xml",
+      "report_sha256": "2c8eb21fbb62834cc1069d8c0e9d01cf8469b0ea703cd46a734ce757e3ee22d9",
+      "overall_result": "PASS",
+      "partial_run": false,
+      "selected_payload_architectures": [
+        "arm64"
+      ],
+      "message_count": 0,
+      "tests": [
+        {
+          "id": 2,
+          "name": "署名されたドライバーおよび実行可能ファイルのインストール",
+          "result": "PASS"
+        },
+        {
+          "id": 11,
+          "name": "ユーザー アカウント制御の実行レベル",
+          "result": "PASS"
+        },
+        {
+          "id": 77,
+          "name": "アプリケーション数",
+          "result": "PASS"
+        },
+        {
+          "id": 31,
+          "name": "アプリ マニフェスト",
+          "result": "PASS"
+        },
+        {
+          "id": 87,
+          "name": "ファイル関連付けの動詞",
+          "result": "PASS"
+        },
+        {
+          "id": 86,
+          "name": "レジストリ チェック",
+          "result": "PASS"
+        },
+        {
+          "id": 91,
+          "name": "エンタープライズ機能",
+          "result": "PASS"
+        },
+        {
+          "id": 90,
+          "name": "リソース パッケージ",
+          "result": "PASS"
+        },
+        {
+          "id": 70,
+          "name": "禁止されたファイルのアナライザー",
+          "result": "PASS"
+        },
+        {
+          "id": 62,
+          "name": "プライベート コード署名",
+          "result": "PASS"
+        },
+        {
+          "id": 45,
+          "name": "アプリ リソース",
+          "result": "PASS"
+        },
+        {
+          "id": 61,
+          "name": "ブランド化",
+          "result": "PASS"
+        },
+        {
+          "id": 46,
+          "name": "デバッグの構成",
+          "result": "PASS"
+        },
+        {
+          "id": 52,
+          "name": "特殊用途の機能",
+          "result": "PASS"
+        },
+        {
+          "id": 56,
+          "name": "ExclusiveTo 属性",
+          "result": "PASS"
+        },
+        {
+          "id": 57,
+          "name": "型のロケーション",
+          "result": "PASS"
+        },
+        {
+          "id": 55,
+          "name": "型名の大文字小文字の区別",
+          "result": "PASS"
+        },
+        {
+          "id": 54,
+          "name": "型名の正確性",
+          "result": "PASS"
+        },
+        {
+          "id": 58,
+          "name": "一般的なメタデータ正確性",
+          "result": "PASS"
+        },
+        {
+          "id": 53,
+          "name": "プロパティ",
+          "result": "PASS"
+        },
+        {
+          "id": 89,
+          "name": "アーカイブ ファイルの使用量",
+          "result": "PASS"
+        },
+        {
+          "id": 88,
+          "name": "ブロック済みの実行可能ファイル",
+          "result": "PASS"
+        },
+        {
+          "id": 63,
+          "name": "プラットフォームに適したファイル",
+          "result": "PASS"
+        },
+        {
+          "id": 92,
+          "name": "DPIAwarenessValidation",
+          "result": "PASS"
+        }
+      ]
+    },
+    {
+      "variant": "x64",
+      "artifact": "MioNote-1.0.0-store-x64.msix",
+      "artifact_sha256": "57130dc88033855431a61ced112fdc602c3abaa9077cbb4b245c4f0a337c4ec2",
+      "report_xml": "x64-report.xml",
+      "report_sha256": "9c958801787c8328bc30d0257f3dca27e9f3543848d861fb4d71c039c3da528d",
+      "overall_result": "PASS",
+      "partial_run": false,
+      "selected_payload_architectures": [
+        "x64"
+      ],
+      "message_count": 0,
+      "tests": [
+        {
+          "id": 2,
+          "name": "署名されたドライバーおよび実行可能ファイルのインストール",
+          "result": "PASS"
+        },
+        {
+          "id": 11,
+          "name": "ユーザー アカウント制御の実行レベル",
+          "result": "PASS"
+        },
+        {
+          "id": 77,
+          "name": "アプリケーション数",
+          "result": "PASS"
+        },
+        {
+          "id": 31,
+          "name": "アプリ マニフェスト",
+          "result": "PASS"
+        },
+        {
+          "id": 87,
+          "name": "ファイル関連付けの動詞",
+          "result": "PASS"
+        },
+        {
+          "id": 86,
+          "name": "レジストリ チェック",
+          "result": "PASS"
+        },
+        {
+          "id": 91,
+          "name": "エンタープライズ機能",
+          "result": "PASS"
+        },
+        {
+          "id": 90,
+          "name": "リソース パッケージ",
+          "result": "PASS"
+        },
+        {
+          "id": 70,
+          "name": "禁止されたファイルのアナライザー",
+          "result": "PASS"
+        },
+        {
+          "id": 62,
+          "name": "プライベート コード署名",
+          "result": "PASS"
+        },
+        {
+          "id": 45,
+          "name": "アプリ リソース",
+          "result": "PASS"
+        },
+        {
+          "id": 61,
+          "name": "ブランド化",
+          "result": "PASS"
+        },
+        {
+          "id": 46,
+          "name": "デバッグの構成",
+          "result": "PASS"
+        },
+        {
+          "id": 52,
+          "name": "特殊用途の機能",
+          "result": "PASS"
+        },
+        {
+          "id": 56,
+          "name": "ExclusiveTo 属性",
+          "result": "PASS"
+        },
+        {
+          "id": 57,
+          "name": "型のロケーション",
+          "result": "PASS"
+        },
+        {
+          "id": 55,
+          "name": "型名の大文字小文字の区別",
+          "result": "PASS"
+        },
+        {
+          "id": 54,
+          "name": "型名の正確性",
+          "result": "PASS"
+        },
+        {
+          "id": 58,
+          "name": "一般的なメタデータ正確性",
+          "result": "PASS"
+        },
+        {
+          "id": 53,
+          "name": "プロパティ",
+          "result": "PASS"
+        },
+        {
+          "id": 89,
+          "name": "アーカイブ ファイルの使用量",
+          "result": "PASS"
+        },
+        {
+          "id": 88,
+          "name": "ブロック済みの実行可能ファイル",
+          "result": "PASS"
+        },
+        {
+          "id": 63,
+          "name": "プラットフォームに適したファイル",
+          "result": "PASS"
+        },
+        {
+          "id": 92,
+          "name": "DPIAwarenessValidation",
+          "result": "PASS"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "date": "2026-10-27",
+  "app_version": "0.12.1",
+  "submission_package_version": "1.0.0.0",
+  "test_update_version": "1.0.2.0",
+  "host": {
+    "version": "10.0.26300.0",
+    "architecture": "arm64",
+    "x64_execution": "Windows on Arm emulation",
+    "os": "Windows 11 Home",
+    "input": "mouse drag; pressure setting persistence checked; physical pen pressure/latency not measured"
+  },
+  "signing": {
+    "certificate_thumbprint": "D4644F299F34812EA1C421C28FC86C7EB0FAE57F",
+    "package_publisher": "CN=D0411010-4A66-49C6-8501-3C08B3C6E4C7",
+    "root_store_used": false,
+    "trusted_location": "LocalMachine\\TrustedPeople",
+    "validity_days": 1,
+    "private_key_exported": false,
+    "method": "temporary self-signed code-signing certificate"
+  },
+  "cases": [
+    {
+      "name": "ARM64 signed bundle install and architecture selection",
+      "result": "PASS"
+    },
+    {
+      "name": "x64 signed individual MSIX fresh install",
+      "result": "PASS"
+    },
+    {
+      "name": "Both architectures normal activation, handwriting, Japanese path save, PDF/PNG/SVG export",
+      "result": "PASS"
+    },
+    {
+      "name": "ARM64 mixed-size multi-page notebook reopen and append; all-page PNG/SVG ZIP",
+      "result": "PASS"
+    },
+    {
+      "name": "Both architectures LocalState preferences and restart restoration",
+      "result": "PASS"
+    },
+    {
+      "name": "ARM64 bundle update and x64 individual update 1.0.0.0 to 1.0.2.0",
+      "result": "PASS"
+    },
+    {
+      "name": "Both architectures uninstall removes package settings and retains external notes/exports",
+      "result": "PASS"
+    },
+    {
+      "result": "PASS",
+      "note": "Verified in initial 0.12.0 runtime pass; storage implementation unchanged in 0.12.1",
+      "name": "Portable and Store preferences separation"
+    },
+    {
+      "result": "PASS",
+      "note": "Verified in initial 0.12.0 runtime pass; loader unchanged; native tests repeated on final code",
+      "name": "Malformed notebook rejected while current notebook preserved"
+    },
+    {
+      "result": "PASS",
+      "change": "Restore missing keyboard focus only while this app owns foreground; on stroke/I-O completion and file dialog return",
+      "name": "Immediate save shortcut after handwriting and PDF shortcut after closing save dialog"
+    },
+    {
+      "name": "Normal activation does not create diagnostic log",
+      "result": "PASS"
+    }
+  ],
+  "updates": {
+    "x64": {
+      "before_package": "5D6DC947.MioNote_1.0.0.0_x64__cv1vvfkpbt3k6",
+      "after_package": "5D6DC947.MioNote_1.0.2.0_x64__cv1vvfkpbt3k6",
+      "exe_sha256": "e7389ad7eab5711a4e1b8a59b1f646808e7793729917ff99c4e1d31363850f9c",
+      "settings_preserved": true,
+      "settings_sha256": "b1915983fcfb11ad7ed6f9ed004274385de9993da77e150de881305d2cb9a4c1"
+    },
+    "arm64": {
+      "before_package": "5D6DC947.MioNote_1.0.0.0_arm64__cv1vvfkpbt3k6",
+      "after_package": "5D6DC947.MioNote_1.0.2.0_arm64__cv1vvfkpbt3k6",
+      "update_format": "MSIXbundle",
+      "app_version": "0.12.1",
+      "exe_sha256": "2d1123edfe9a0346f9de0d274906e3e7dea82628975a10d428d524a683d65067",
+      "settings_preserved": true,
+      "settings_sha256": "756d83108dfc7b290d00f6eb81aeb344a982a1cb9f3679e5cc9bc5944379f077"
+    }
+  },
+  "native_tests": {
+    "known_dependency_findings": 0,
+    "arm64_passed": 36,
+    "x64_passed": 36,
+    "clippy_configurations_passed": 4,
+    "dependency_packages_checked": 45,
+    "rustfmt": "PASS"
+  },
+  "exports": {
+    "arm64": {
+      "pdf_dimensions_mm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          257.0,
+          182.0
+        ]
+      ],
+      "rendered_pages_with_ink": [
+        {
+          "page": 1,
+          "dark_stroke_pixels": 56
+        },
+        {
+          "page": 2,
+          "dark_stroke_pixels": 137
+        }
+      ],
+      "files": [
+        {
+          "file": "ARM64-最終.inknote",
+          "bytes": 1517,
+          "sha256": "0f074fd3f458005d76147e12c898d1c5f98e958f38094280b22c3b4c5dc56df8"
+        },
+        {
+          "file": "ARM64-最終.pdf",
+          "bytes": 25382,
+          "sha256": "6d5038dcfd0b09df9d4e02930059370be9c40752133a10050baa5a5d817f733d"
+        },
+        {
+          "file": "ARM64-最終.png",
+          "bytes": 44609,
+          "sha256": "1a6d8db68313edb14bcca9a2b8ca8cb94ee711c29b92267622139e40d5cdda48"
+        },
+        {
+          "file": "ARM64-最終.svg",
+          "bytes": 27443,
+          "sha256": "fc8ed1a2ce865db2ba606939153aed6d5f91b1d74818fd630aba5ea852eabab3"
+        },
+        {
+          "file": "ARM64-最終-PNG.zip",
+          "bytes": 100447,
+          "sha256": "43683a6eed6aa096ba4e41f9be50a408588185798be51e285d084b3a211c207c"
+        },
+        {
+          "file": "ARM64-最終-SVG.zip",
+          "bytes": 41556,
+          "sha256": "07c050d4fec01d025710615c3d50cf698e420e58d4bddb09039d7105c188b1d8"
+        }
+      ],
+      "notebook_metadata": {
+        "format": "MioNote",
+        "version": 2,
+        "active_page": 1,
+        "pages": [
+          {
+            "paper": {
+              "size": "A4",
+              "orientation": "portrait"
+            },
+            "rule_spacing": "wide"
+          },
+          {
+            "paper": {
+              "size": "B5",
+              "orientation": "landscape"
+            },
+            "rule_spacing": "wide"
+          }
+        ]
+      },
+      "png_pixels": [
+        3035,
+        2150
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "svg_dimensions": {
+        "width": "257mm",
+        "height": "182mm",
+        "viewBox": "0 0 971.33862 687.87402"
+      },
+      "all_page_png_svg_zip_crc_and_dimensions": "PASS",
+      "zip_current_page_matches_single_export": true,
+      "result": "PASS"
+    },
+    "x64": {
+      "pdf_dimensions_mm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "rendered_pages_with_ink": [
+        {
+          "page": 1,
+          "dark_stroke_pixels": 89
+        }
+      ],
+      "files": [
+        {
+          "file": "x64-最終.inknote",
+          "bytes": 742,
+          "sha256": "4d347f4d8bb86ce1a5ef2d7619f6781631a0339551596b5eb981de147cd5ea44"
+        },
+        {
+          "file": "x64-最終.pdf",
+          "bytes": 3099,
+          "sha256": "bda62f47241cd20c059e6577eb333cb87c576a09b910af11e50aed7390382fe1"
+        },
+        {
+          "file": "x64-最終.png",
+          "bytes": 53491,
+          "sha256": "bd123f5d5ef2925d14b022f5e36e73f77c5d21f3bda8b002730c18696753c4ee"
+        },
+        {
+          "file": "x64-最終.svg",
+          "bytes": 4554,
+          "sha256": "9e1406eb7988a199cc8f08fa48751bd3f8351e435caf3f1afefadba96c1e12f6"
+        }
+      ],
+      "notebook_metadata": {
+        "format": "MioNote",
+        "version": 2,
+        "active_page": 0,
+        "pages": [
+          {
+            "paper": {
+              "size": "A4",
+              "orientation": "portrait"
+            },
+            "rule_spacing": "standard"
+          }
+        ]
+      },
+      "png_pixels": [
+        2480,
+        3508
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "svg_dimensions": {
+        "width": "210mm",
+        "height": "297mm",
+        "viewBox": "0 0 793.70081 1122.51965"
+      },
+      "result": "PASS"
+    }
+  },
+  "signed_payload_checks": [
+    {
+      "file": "MioNote-0.12.1-store-arm64.msix",
+      "payload_files_compared": 110,
+      "payload_matches_original_except_update_version": true,
+      "exe_sha256": "2d1123edfe9a0346f9de0d274906e3e7dea82628975a10d428d524a683d65067",
+      "package_sha256": "6c08287d379a16b79b3a83cc48d544408cee52756d25ccafd04b39af40bcb3c8"
+    },
+    {
+      "file": "MioNote-0.12.1-test-update-arm64.msix",
+      "payload_files_compared": 110,
+      "payload_matches_original_except_update_version": true,
+      "exe_sha256": "2d1123edfe9a0346f9de0d274906e3e7dea82628975a10d428d524a683d65067",
+      "package_sha256": "b48022a55d04455c3c3fd0022562e8a7ee89fa67af13b9c196d6a54af0aa94e4"
+    },
+    {
+      "file": "MioNote-0.12.1-store-x64.msix",
+      "payload_files_compared": 110,
+      "payload_matches_original_except_update_version": true,
+      "exe_sha256": "e7389ad7eab5711a4e1b8a59b1f646808e7793729917ff99c4e1d31363850f9c",
+      "package_sha256": "15f00fd598d150c8936b2e6b7a04faa05a8fc2a3cb73c056686ab2953ad89b94"
+    },
+    {
+      "file": "MioNote-0.12.1-test-update-x64.msix",
+      "payload_files_compared": 110,
+      "payload_matches_original_except_update_version": true,
+      "exe_sha256": "e7389ad7eab5711a4e1b8a59b1f646808e7793729917ff99c4e1d31363850f9c",
+      "package_sha256": "c8f1a19741d5405e7bd22f372201f64c05c6f193561ea98eaa5d3b4384141c7c"
+    }
+  ],
+  "cleanup": {
+    "localstate_settings_absent": true,
+    "private_key_deleted": true,
+    "test_processes_absent": true,
+    "test_certificate_absent_root_stores": true,
+    "original_0120_release_files_unchanged": true,
+    "external_note_export_files_preserved": true,
+    "test_certificate_absent_machine_trusted_people": true,
+    "original_unpacked_and_portable_settings_unchanged": true,
+    "test_certificate_absent_current_user_my": true,
+    "final_unsigned_release_files_unchanged": true,
+    "test_packages_absent": true
+  },
+  "submission_artifacts": [
+    {
+      "sha256": "ad094368b34132c5e3729a1a6b896dcd9ddc4d57521bbe3dc5bd859cdde45518",
+      "file": "MioNote-0.12.1-store.msixbundle"
+    },
+    {
+      "sha256": "c9ad149bc45ac229bb2ff2b3cffed9e09fff13e9f5473e49f94aa2d82143450a",
+      "file": "MioNote-0.12.1-store-arm64.msix"
+    },
+    {
+      "sha256": "4f008db12bb8f2b1dfe293c540b01763e1b2645e89e9f3cd25ca71fe2e4306ca",
+      "file": "MioNote-0.12.1-store-x64.msix"
+    }
+  ],
+  "store_upload_or_publication_performed": false,
+  "completed_utc": "2026-10-27T06:06:36.8420344Z"
+}

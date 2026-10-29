@@ -1,0 +1,7 @@
+{
+  "checked_at_utc": "2026-10-27T07:10:10.062950+00:00",
+  "source": "https://api.osv.dev/v1/querybatch",
+  "cargo_lock_sha256": "5468d419be17802546dd1470a60df7fb91c66880641c29cde9e32277745b6ad4",
+  "packages_checked": 45,
+  "findings": []
+}

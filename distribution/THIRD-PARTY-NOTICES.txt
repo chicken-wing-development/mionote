@@ -1,0 +1,24 @@
+mio note — Third-party notices
+
+The Rust standard library, Rust for Windows bindings, and JSON/ZIP crates are
+used by this executable. Their upstream license texts are included in the
+licenses folder. Versions and licenses for all Cargo dependencies are listed
+in licenses/dependencies/NOTICE.txt, with their upstream license files nearby.
+
+Rust for Windows crates:
+  windows, windows-core, windows-collections, windows-future,
+  windows-link, windows-numerics, windows-result, windows-strings,
+  windows-threading, windows-implement, windows-interface
+  Copyright (c) Microsoft Corporation.
+  https://github.com/microsoft/windows-rs
+  MIT license (license text: licenses/windows-rs-MIT.txt).
+
+Rust:
+  Copyright (c) The Rust Project Contributors.
+  https://github.com/rust-lang/rust
+  MIT license (license text: licenses/Rust-MIT.txt).
+  Additional upstream notices: licenses/Rust-COPYRIGHT-library.html
+  Additional license texts for standard-library components are included.
+
+The Microsoft C/C++ runtime is statically linked using the MSVC toolchain.
+Windows system libraries are provided by Windows and are not bundled.

@@ -1,0 +1,6 @@
+# Preserve release/audit hashes, including Cargo.lock, across Git clients.
+# Text files remain UTF-8; Git does not rewrite their line endings.
+* -text
+*.png binary
+*.ico binary
+*.inknote binary
